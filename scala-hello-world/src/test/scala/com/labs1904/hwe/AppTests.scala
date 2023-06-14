@@ -6,7 +6,7 @@ class AppTests extends FunSpec {
   describe("greeting") {
     it("should return the name prepended with the greeting") {
       val name = "Tim"
-      val expected = "Hello Tim"
+      val expected = s"Hello $name"
 
       val actual = App.greeting(name)
       assert(actual === expected)
