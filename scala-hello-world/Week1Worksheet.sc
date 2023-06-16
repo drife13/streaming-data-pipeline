@@ -1,3 +1,5 @@
+println(("2" > "1").toString)
+
 val animal = "Cat"
 println(animal)
 
