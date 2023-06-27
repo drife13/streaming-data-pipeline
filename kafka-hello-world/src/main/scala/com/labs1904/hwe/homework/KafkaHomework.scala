@@ -34,7 +34,7 @@ object KafkaHomework {
 
     while (true) {
       // TODO: Change this to be every 5 seconds
-      val duration: Duration = Duration.ofMillis(100)
+      val duration: Duration = Duration.ofMillis(5000)
 
       //TODO: Look up the ConsumerRecords class below, in your own words what is the class designed to do?
       val records: ConsumerRecords[String, String] = consumer.poll(duration)
