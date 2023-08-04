@@ -19,7 +19,7 @@ object MyApp {
     var connection: Connection = null
     try {
       val conf = HBaseConfiguration.create()
-      conf.set("hbase.zookeeper.quorum", HBASE_ZOOKEEPER_QUORUM)
+      conf.set("hbase.zookeeper.quorum", "hbase01.labs1904.com:2181")
       connection = ConnectionFactory.createConnection(conf)
       // Example code... change me
       val table = connection.getTable(TableName.valueOf("kmenke:users"))
